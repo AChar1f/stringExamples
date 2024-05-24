@@ -97,11 +97,32 @@ function(...numb1) {
 
 }
 
-Spread Operator Example:  
+Spread Operator Example:  allows access to each element at a time. denoted by ...variableName. Shorthand for a loop.
 let numbers = [ 2, 8, 9, 5, 7, 15, 16, 24]
 console.log(`Highest number: ${Math.max(...numbers)})
 */
 
-let numbers = [2, 8, 10, 1, 4, 11]
-console.log(`Highest number: ${Math.max(...numbers)}`)
-console.log(`Lowest number: ${Math.min(...numbers)}`)
+// let numbers = [2, 8, 10, 1, 4, 11]
+// console.log(`Highest number: ${Math.max(...numbers)}`)
+// console.log(`Lowest number: ${Math.min(...numbers)}`)
+
+/*Shallow copy: will copy the elements and it location in memory. thus changes to to an array will affect both arrrays in this case. Works for strings and arrays */
+
+// let firstName = 'Mustafa'
+// console.log(...firstName)
+
+// let arr1 = [1, 4, 5]
+// let arr2 = arr1
+// arr2[0] = 10
+// console.log(`arr1: `, arr1)
+// console.log(`arr2: `, arr2)
+
+
+//Deep copy: copies the elements and stores it in a new locations in memory. thus changes made will not affect both arrays in this case.
+
+// let arr1 = [1, 4, 5]
+// let arr2 = [...arr1]
+// arr2[0] = 10
+// console.log(`arr1: `, arr1)
+// console.log(`arr2: `, arr2)
+
